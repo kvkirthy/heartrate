@@ -29,7 +29,7 @@ class App extends Component {
           <h2>Heart Rate Calculator</h2>
         </div>
         <p className="App-intro">
-          Age: <input type="text" onChange={ (e) => this.setState({age: e.target.value}) } />
+          Age: <input value={this.state.age}  type="text" onChange={ (e) => this.setState({age: e.target.value}) } />
           <br />
           <br />
           <Heatmap bookmarks={bookmarks} />
